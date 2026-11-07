@@ -1,0 +1,95 @@
+erDiagram
+    CUSTOMER ||--o{ ACCOUNT : owns
+    BRANCH ||--o{ ACCOUNT : hosts
+    ACCOUNT_TYPE ||--o{ ACCOUNT : classifies
+    ACCOUNT ||--o{ BANK_TRANSACTION : records
+    ACCOUNT ||--o{ CARD : has
+    ACCOUNT ||--o{ TRANSFER : "sends (from)"
+    ACCOUNT ||--o{ TRANSFER : "receives (to)"
+    BANK_TRANSACTION |o--o| TRANSFER : "debit leg"
+    BANK_TRANSACTION |o--o| TRANSFER : "credit leg"
+    CUSTOMER ||--o{ LOAN : takes
+    ACCOUNT ||--o{ LOAN : "disbursed into"
+    LOAN ||--o{ LOAN_REPAYMENT : "repaid by"
+
+    CUSTOMER {
+        int customer_id PK
+        varchar first_name
+        varchar last_name
+        varchar email UK
+        varchar phone UK
+        varchar national_id UK
+        date date_of_birth
+        date date_joined
+    }
+    BRANCH {
+        int branch_id PK
+        varchar branch_name UK
+        varchar city
+    }
+    ACCOUNT_TYPE {
+        int type_id PK
+        varchar type_name UK
+        numeric interest_rate
+        numeric min_balance
+    }
+    ACCOUNT {
+        bigint account_id PK
+        int customer_id FK
+        int type_id FK
+        int branch_id FK
+        numeric balance
+        varchar status
+        date opened_date
+    }
+    BANK_TRANSACTION {
+        bigint txn_id PK
+        bigint account_id FK
+        varchar txn_type
+        numeric amount
+        numeric balance_after
+        varchar status
+        varchar reference UK
+        timestamp created_at
+    }
+    TRANSFER {
+        bigint transfer_id PK
+        bigint from_account_id FK
+        bigint to_account_id FK
+        numeric amount
+        bigint debit_txn_id FK
+        bigint credit_txn_id FK
+        varchar status
+    }
+    CARD {
+        int card_id PK
+        bigint account_id FK
+        char card_number UK
+        varchar card_type
+        date expiry_date
+        varchar status
+    }
+    LOAN {
+        int loan_id PK
+        int customer_id FK
+        bigint account_id FK
+        numeric principal
+        numeric interest_rate
+        int term_months
+        varchar status
+    }
+    LOAN_REPAYMENT {
+        bigint repayment_id PK
+        int loan_id FK
+        numeric amount_paid
+        timestamp paid_at
+    }
+    AUDIT_LOG {
+        bigint audit_id PK
+        varchar table_name
+        varchar record_id
+        varchar action
+        varchar changed_by
+        timestamp changed_at
+        jsonb details
+    }
