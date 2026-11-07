@@ -1,7 +1,7 @@
 # MIT 8103 Advanced Database Systems: Portfolio
 
-**Student:** [Your full name]
-**Student ID:** [Your ID]
+**Student:** Laura Solomon
+**Student ID:** 301887213
 **Session:** 2026/2027, First Semester Continuous Assessment
 
 ## Selected Case Study: Ace Bank
