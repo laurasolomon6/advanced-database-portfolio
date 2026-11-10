@@ -9,7 +9,7 @@ This folder contains the database design for Ace Bank, a simulated retail bank. 
 | schema.sql | Creates all the tables, keys, constraints and indexes, and adds a small amount of seed data |
 | er_diagram.mermaid | The ER diagram showing how the tables relate |
 | normalisation.md | Explains how the design was normalised from an unnormalised table to 3NF |
-| screenshots/ | Evidence that the schema was run and tested |
+| screenshot images (.png) | Evidence that the schema was run and tested |
 
 ## Design summary
 The database has ten tables: customer, branch, account_type, account, bank_transaction, transfer, card, loan, loan_repayment and audit_log. One customer can own many accounts, and one account can have many transactions. Account types and branches are kept in their own tables so their details are stored once instead of being repeated on every account.
@@ -30,7 +30,6 @@ The database has ten tables: customer, branch, account_type, account, bank_trans
    - `SELECT * FROM branch;` returns the two seed branches, Ikeja Main and Wuse II (screenshot: branch data.png)
 
 ## Challenges and what I learned
-[Write 2 or 3 sentences here in your own words. See the notes below.]
 I had difficulty taking inputing a command, i learned that i have to press enter first before another line of command can work because i initially put in 2 diffrent commands on one line and it did not run.
 i had trouble finding the file path in Terminal so i dragged and dropped it so it just appeared in full and i was able to continue, i think was the first issue i encountered but i was able to figure it out.
 ## References
