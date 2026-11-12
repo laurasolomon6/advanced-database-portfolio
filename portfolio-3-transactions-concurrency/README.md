@@ -41,5 +41,4 @@ I ran the commit and rollback script the second time without restting the balanc
 Both tellers satrted with a balance of 100,000 but ended up with a balance of 80000 so for teller 1, the withdrawal was 30000 and for teller 2, the withdrawal was 20000. teller 1 withdrawal got lost so teller 2 worked with old balance of 100000 instead of 70000, so that was what i fixed by opening two new terminals and the balance became 50000 as it should have been.
 
 ## References
-- PostgreSQL documentation: Transaction Isolation, and Explicit Locking. https://www.postgresql.org/docs/current/mvcc.html
-I used claude to generate scripts to fix the balance error on this portfolio
+- PostgreSQL documentation: Transaction Isolation, and Explicit Locking. https://www.postgresql.org/docs/current/mvcc.html I used claude to generate scripts to fix the balance error on this portfolio
