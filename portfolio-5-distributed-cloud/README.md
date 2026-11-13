@@ -59,7 +59,8 @@ I deployed a free MongoDB Atlas cluster for Portfolio 4. Screenshot: `atlas-clus
 | Sharding by account_id | Scales storage and writes | Cross-shard queries and transfers are harder |
 | Multi-location deployment | Survives a site failure | Higher cost and complexity |
 ## 8. Challenges and lessons learned
-[Write 2 or 3 sentences in your own words. For example, what surprised you about the trade-off between safety and speed, or why the shard key matters.]
+I did not face any major challenge, i just learnt a whole lot about using mongodb and why it is good for bank database. 
+
 ## 9. References
 - PostgreSQL documentation: High Availability, Load Balancing, and Replication; Table Partitioning. https://www.postgresql.org/docs/current/
 - MongoDB Manual: Replication; Sharding. https://www.mongodb.com/docs/manual/
