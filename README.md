@@ -23,10 +23,10 @@
 | Folder | Activity | Status |
 |---|---|---|
 | portfolio-1-database-design | Database Design and Modelling | Completed |
-| portfolio-2-query-optimisation | Query Processing and Optimisation | In progress |
-| portfolio-3-transactions-concurrency | Transactions and Concurrency | Not started |
-| portfolio-4-nosql | NoSQL and Advanced Data Models | Not started |
-| portfolio-5-distributed-cloud | Distributed and Cloud Database Exercise | Not started |
+| portfolio-2-query-optimisation | Query Processing and Optimisation | Completed |
+| portfolio-3-transactions-concurrency | Transactions and Concurrency | Completed |
+| portfolio-4-nosql | NoSQL and Advanced Data Models | Completed |
+| portfolio-5-distributed-cloud | Distributed and Cloud Database Exercise | Completed |
 
 ## How to Run
 
