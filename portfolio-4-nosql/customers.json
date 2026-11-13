@@ -1,0 +1,89 @@
+[
+  {
+    "customer_id": 1,
+    "first_name": "Chidi",
+    "last_name": "Okafor",
+    "email": "chidi.okafor@acebank.example",
+    "phone": "08011111111",
+    "city": "Lagos",
+    "date_joined": { "$date": "2023-03-14T00:00:00Z" },
+    "accounts": [
+      { "account_id": 1000000001, "type": "Savings", "balance": 100000.00, "status": "ACTIVE", "branch": "Ikeja Main" },
+      { "account_id": 1000000002, "type": "Current", "balance": 50000.00, "status": "ACTIVE", "branch": "Ikeja Main" }
+    ],
+    "cards": [
+      { "card_type": "DEBIT", "last4": "4821", "status": "ACTIVE" }
+    ],
+    "preferences": { "alerts": ["SMS", "EMAIL"], "language": "en" }
+  },
+  {
+    "customer_id": 2,
+    "first_name": "Amaka",
+    "last_name": "Eze",
+    "email": "amaka.eze@acebank.example",
+    "phone": "08022222222",
+    "city": "Abuja",
+    "date_joined": { "$date": "2022-08-02T00:00:00Z" },
+    "accounts": [
+      { "account_id": 1000000003, "type": "Savings", "balance": 850000.50, "status": "ACTIVE", "branch": "Wuse II" }
+    ],
+    "cards": [
+      { "card_type": "DEBIT", "last4": "1177", "status": "ACTIVE" },
+      { "card_type": "CREDIT", "last4": "9034", "status": "BLOCKED" }
+    ],
+    "loans": [
+      { "loan_id": 1, "principal": 500000, "term_months": 12, "status": "ACTIVE" }
+    ],
+    "preferences": { "alerts": ["EMAIL"], "language": "en" }
+  },
+  {
+    "customer_id": 3,
+    "first_name": "Ibrahim",
+    "last_name": "Bello",
+    "email": "ibrahim.bello@acebank.example",
+    "phone": "08033333333",
+    "city": "Kano",
+    "date_joined": { "$date": "2024-01-20T00:00:00Z" },
+    "accounts": [
+      { "account_id": 1000000004, "type": "Current", "balance": 2300000.00, "status": "ACTIVE", "branch": "Sabon Gari" },
+      { "account_id": 1000000005, "type": "Fixed Deposit", "balance": 5000000.00, "status": "ACTIVE", "branch": "Sabon Gari", "maturity_date": { "$date": "2027-06-30T00:00:00Z" } }
+    ],
+    "business_profile": {
+      "business_name": "Bello Trading Ltd",
+      "registration_no": "RC-123456",
+      "sector": "Retail"
+    },
+    "preferences": { "alerts": ["SMS"], "language": "ha" }
+  },
+  {
+    "customer_id": 4,
+    "first_name": "Ngozi",
+    "last_name": "Adeyemi",
+    "email": "ngozi.adeyemi@acebank.example",
+    "phone": "08044444444",
+    "city": "Lagos",
+    "date_joined": { "$date": "2025-05-09T00:00:00Z" },
+    "accounts": [
+      { "account_id": 1000000006, "type": "Savings", "balance": 15000.00, "status": "DORMANT", "branch": "Lekki Phase 1" }
+    ],
+    "cards": [],
+    "preferences": { "alerts": [], "language": "en" }
+  },
+  {
+    "customer_id": 5,
+    "first_name": "Tunde",
+    "last_name": "Balogun",
+    "email": "tunde.balogun@acebank.example",
+    "phone": "08055555555",
+    "city": "Port Harcourt",
+    "date_joined": { "$date": "2021-11-30T00:00:00Z" },
+    "accounts": [
+      { "account_id": 1000000007, "type": "Current", "balance": 420000.00, "status": "ACTIVE", "branch": "Garden City" },
+      { "account_id": 1000000008, "type": "Savings", "balance": 76000.25, "status": "ACTIVE", "branch": "Garden City" }
+    ],
+    "cards": [
+      { "card_type": "PREPAID", "last4": "5502", "status": "ACTIVE" }
+    ],
+    "preferences": { "alerts": ["SMS", "PUSH"], "language": "en" }
+  }
+]
