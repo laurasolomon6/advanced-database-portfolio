@@ -33,5 +33,6 @@
 Each portfolio folder has its own README explaining how the work was implemented and tested. Start with Portfolio 1: run `schema.sql` in PostgreSQL to create the Ace Bank database.
 
 ## AI Use Declaration
-
-[Complete this honestly when you finish. State the AI tool used, what you used it for, and how you reviewed, tested or verified the output.]
+AI tool: Claude (Anthropic).
+Used for: suggesting the portfolio structure, drafting the schema, SQL scripts, MongoDB sample data and README text, explaining execution plans and errors, and drafting the summary.
+Verification: I ran all SQL scripts and demos myself, set up and queried the MongoDB Atlas cluster, took the screenshots from my own runs, and edited the written explanations so that I can explain the work.
